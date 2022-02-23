@@ -1,9 +1,14 @@
 const button = document.getElementById('addTask');
-let container = document.getElementById('container');
+const container = document.getElementById('container');
+
 
 button.addEventListener('click', function () {
   const newElement = document.createElement('div');
   newElement.className = 'task-container';
-  newElement.innerHTML = '<input class="input"></input><button type="button" class="priority">Priority</button><button type="button" class="delete">Complete</button>';
+  newElement.innerHTML = '<button type="button" class="complete">Complete</button><input class="input"></input><button type="button" class="priority-button">Priority</button><button type="button" class="delete">Delete</button>';
   container.append(newElement);
 });
+
+priority.addEventListener('click', function () {
+
+})
