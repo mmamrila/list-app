@@ -1,0 +1,19 @@
+#addTask {
+  background-color: #23BEE0;
+  color: #FFFFFF;
+  text-align: center;
+  border: 6px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+h1 {
+  color: #646464;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  width: 181px;
+  height: 29px;
+  top: 218px;
+  left: 206px;
+}
