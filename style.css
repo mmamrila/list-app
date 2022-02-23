@@ -17,3 +17,27 @@ h1 {
   top: 218px;
   left: 206px;
 }
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+#main {
+  background-color: #FFFFFF;
+  overflow: auto;
+}
+
+#priority {
+  background-color: #23BEE0;
+  color:#FFFFFF;
+  width: 390px;
+  height: 727px;
+  top: 163px;
+  left: 1022px;
+  border-radius: 11px;
+}
+
+/* #task-container {
+  border-left-style: 5px solid #232323;
+} */
