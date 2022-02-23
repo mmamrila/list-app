@@ -39,6 +39,7 @@ h1 {
 }
 
 .draggables {
+  padding: 1rem;
   border-left: 5px solid #23BEE0;
   border-bottom: 1px solid #E2E2E2;
   box-sizing: border-box;
@@ -48,3 +49,5 @@ h1 {
 .draggable.dragging {
   opacity: .5;
 }
+
+ 
