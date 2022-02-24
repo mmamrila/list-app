@@ -70,10 +70,6 @@ h1 {
   width: 682px;
 }
 
-.draggable.dragging {
-  opacity: .5;
-}
-
 img {
   margin-left: 61px;
   margin-top: 23px;
