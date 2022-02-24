@@ -1,6 +1,7 @@
 const button = document.getElementById('addTask');
 const container = document.getElementById('container');
 const flexContainers = document.querySelectorAll('.drag-container');
+const grayOut = document.querySelectorAll('.grayOut');
 
 button.addEventListener('click', function () {
 
@@ -9,7 +10,7 @@ button.addEventListener('click', function () {
   newElement.innerHTML = '<div draggable="true"><button type="button" class="complete">Complete</button><input class="input"><button type="button" class="delete">Delete</button></div>';
   container.append(newElement);
 
-  // let dragItem = null;
+
   const draggables = document.querySelectorAll('.draggables');
 
   for (i of draggables) {
@@ -46,6 +47,18 @@ button.addEventListener('click', function () {
     this.style.border = '0px';
   }
 
+  // Gray out section not working yet
+  const complete = document.querySelectorAll('.complete');
+
+  for (i of complete) {
+    i.addEventListener('click', click);
+  }
+
+  function click() {
+    draggables.classList.toggle('grayOut');
+  }
+
 });
+
 
 
