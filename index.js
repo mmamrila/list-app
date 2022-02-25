@@ -55,6 +55,7 @@ button.addEventListener('click', function () {
   }
 
   function click() {
+    console.log(draggables);
     draggables.classList.toggle('grayOut');
   }
 

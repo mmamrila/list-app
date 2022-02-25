@@ -18,8 +18,7 @@ h1 {
   font-size: 24px;
   width: 181px;
   height: 29px;
-  top: 218px;
-  left: 206px;
+  margin-right: 0 !important;
 }
 .flex-container {
   display: flex;
