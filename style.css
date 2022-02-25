@@ -68,6 +68,7 @@ h1 {
   cursor: move;
   height: 114px;
   width: 682px;
+  justify-content: center;
 }
 
 img {
