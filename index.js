@@ -51,24 +51,22 @@ button.addEventListener('click', function () {
   // When the complete button is clicked then gray out that task
   const complete = document.querySelectorAll('.complete');
 
-  for (i of complete) {
-    i.addEventListener('click', click);
-  }
+  // for (i of complete) {
+  //   i.addEventListener("click", click);
+  // }
 
-  let found;
+  // function click() {
+  //   for (let i = 0; i <= container.length; i++) {
+  //   }
+  // }
 
-  for (let i = 0; i <= draggables.length; i++) {
-    if (draggables[i] === this) {
-
-    }
-  }
-
-  function click() {
-    console.log(draggables);
-    draggables.classList.toggle('grayOut');
+  for (i = 0; i < draggables.length; i++) {
+    console.log("worked!", draggables[i]);
   }
 
 });
+
+
 
 
 
