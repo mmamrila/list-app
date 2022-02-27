@@ -11,6 +11,8 @@ button.addEventListener('click', function () {
   newElement.innerHTML = '<div draggable="true"><button type="button" class="complete">Complete</button><input class="input"><button type="button" class="delete">Delete</button></div>';
   container.append(newElement);
 
+  handleGrayOut();
+
   // Drag task functions
   const draggables = document.querySelectorAll('.draggables');
 
@@ -48,25 +50,20 @@ button.addEventListener('click', function () {
     this.style.border = '0px';
   }
 
-  // When the complete button is clicked then gray out that task
-  const complete = document.querySelectorAll('.complete');
-
-  // for (i of complete) {
-  //   i.addEventListener("click", click);
-  // }
-
-  // function click() {
-  //   for (let i = 0; i <= container.length; i++) {
-  //   }
-  // }
-
-  for (i = 0; i < draggables.length; i++) {
-    console.log("worked!", draggables[i]);
-  }
-
 });
 
+// When the complete button is clicked toggle gray out on that task
+function handleGrayOut() {
+  let completeButtons = document.querySelectorAll('.complete');
 
+  for (let i = 0; i < completeButtons.length; i++) {
+    let singleCompleteButton = completeButtons[i];
+
+    singleCompleteButton.onclick = function () {
+      this.parentElement.classList.toggle('grayOut');
+    }
+  }
+}
 
 
 
