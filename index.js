@@ -8,7 +8,7 @@ button.addEventListener('click', function () {
 
   const newElement = document.createElement('div');
   newElement.className = 'draggables';
-  newElement.innerHTML = '<div draggable="true"><button type="button" class="complete">Complete</button><input class="input"><button type="button" class="delete">Delete</button></div>';
+  newElement.innerHTML = '<div draggable="true" class="inner"><button type="button" class="complete">Complete</button><input class="input"><a href="#" class="delete"><img src="trashcan.svg"></a></div>';
   container.append(newElement);
 
   handleGrayOut();

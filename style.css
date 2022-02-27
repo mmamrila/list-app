@@ -1,7 +1,9 @@
 #addTask {
   background-color: #23BEE0;
   color: #FFFFFF;
+  font-size: 55px;
   text-align: center;
+  line-height: 50px;
   width: 60px;
   height: 60px;
   border: 6px solid #FFFFFF;
@@ -80,4 +82,8 @@ img {
   justify-content: space-between;
 }
 
- 
+/* inner draggable */
+.inner {
+  position: relative;
+}
+
