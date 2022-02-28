@@ -14,7 +14,7 @@ button.addEventListener('click', function () {
   handleGrayOut();
   readOnly();
   edit();
-
+  removeTask();
   // Drag task functions
   const draggables = document.querySelectorAll('.draggables');
 
@@ -90,11 +90,23 @@ function edit() {
     let singleInput = input[i];
 
     singleInput.onclick = function () {
-      console.log('clicked');
       this.removeAttribute('readonly');
     }
   }
 
+}
+
+function removeTask() {
+  let deleteTask = document.querySelectorAll('.delete');
+
+  for (let i = 0; i < deleteTask.length; i++) {
+    let singleDeleteTask = deleteTask[i];
+
+    singleDeleteTask.onclick = function () {
+      console.log('clicked');
+      this.parentElement.parentElement.remove();
+    }
+  }
 }
 
 
