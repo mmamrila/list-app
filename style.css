@@ -37,12 +37,13 @@ h1 {
 #priority {
   background-color: #23BEE0;
   color:#FFFFFF;
+  display: flex;
+  flex-direction: column;
   width: 359px;
   height: 727px;
   top: 163px;
   left: 1022px;
   border-radius: 11px;
-  overflow: auto;
 }
 
 .pp {
@@ -88,4 +89,3 @@ h1 {
   border-bottom: 2px solid #23BEE0;
   width: 520px;
 }
-
