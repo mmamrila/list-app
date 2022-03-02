@@ -116,8 +116,3 @@ textarea {
   resize: none;
   height: 45px;
 }
-
-.savetrash {
-  display: flex;
-  justify-content: space-between;
-}
