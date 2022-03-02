@@ -89,3 +89,24 @@ h1 {
   border-bottom: 2px solid #23BEE0;
   width: 520px;
 }
+
+.complete {
+  border-radius: 18px;
+  border: none;
+  font-family: montserrat, sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #56ce92;
+}
+
+#priority .draggables .inner .input {
+  width: 200px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#priority .draggables .inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
