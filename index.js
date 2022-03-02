@@ -8,13 +8,12 @@ button.addEventListener('click', function () {
 
   const newElement = document.createElement('div');
   newElement.className = 'draggables';
-  newElement.innerHTML = '<div draggable="true" class="inner"><button type="button" class="complete">Complete</button><input class="input" placeholder="Add task here"><a href="#" class="delete"><img src="trashcan.svg"></a></div>';
+  newElement.innerHTML = '<div draggable="true" class="inner"><button type="button" class="complete">Complete</button><textarea class="input" placeholder="Add task here"></textarea><a href="#" class="delete"><img src="trashcan.svg"></a></div>';
   container.append(newElement);
 
   handleGrayOut();
-  readOnly();
-  edit();
   removeTask();
+
   // Drag task functions
   const draggables = document.querySelectorAll('.draggables');
 
@@ -65,37 +64,6 @@ function handleGrayOut() {
       this.parentElement.classList.toggle('grayOut');
     }
   }
-}
-
-// Makes task read only
-function readOnly() {
-  let input = document.querySelectorAll('.input');
-
-  for (let i = 0; i < input.length; i++) {
-    let singleInput = input[i];
-
-    singleInput.addEventListener("keyup", function (event) {
-      if (event.keyCode === 13) {
-        event.preventDefault();
-        console.log('enter hit');
-        this.toggleAttribute('readonly');
-      }
-    })
-  }
-}
-
-// Makes task editable
-function edit() {
-  let input = document.querySelectorAll('.input');
-
-  for (let i = 0; i < input.length; i++) {
-    let singleInput = input[i];
-
-    singleInput.onclick = function () {
-      this.removeAttribute('readonly');
-    }
-  }
-
 }
 
 // Delete a task

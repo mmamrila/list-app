@@ -72,7 +72,8 @@ h1 {
 .inner {
   display: flex;
   justify-content: space-between;
-  padding-top: 25px;
+  align-items: center;
+  padding-top: 5px;
 }
 
 .grayOut {
@@ -97,6 +98,7 @@ h1 {
   font-weight: 600;
   color: #FFFFFF;
   background-color: #56ce92;
+  height: 20px;
 }
 
 #priority .draggables .inner .input {
@@ -107,6 +109,15 @@ h1 {
 
 #priority .draggables .inner {
   display: flex;
-  flex-wrap: wrap;
   justify-content: start;
+}
+
+textarea {
+  resize: none;
+  height: 45px;
+}
+
+.savetrash {
+  display: flex;
+  justify-content: space-between;
 }
