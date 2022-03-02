@@ -67,6 +67,7 @@ function handleGrayOut() {
   }
 }
 
+// Makes task read only
 function readOnly() {
   let input = document.querySelectorAll('.input');
 
@@ -83,6 +84,7 @@ function readOnly() {
   }
 }
 
+// Makes task editable
 function edit() {
   let input = document.querySelectorAll('.input');
 
@@ -96,6 +98,7 @@ function edit() {
 
 }
 
+// Delete a task
 function removeTask() {
   let deleteTask = document.querySelectorAll('.delete');
 
